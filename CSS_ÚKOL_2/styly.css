@@ -1,0 +1,98 @@
+.inline-container,
+.inline-block-container,
+.block-container,
+
+
+.flex-container {
+    border: 1px solid black;
+}
+
+.inline-div {
+    display: inline;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    text-align: center;
+    color: gray;
+    font: 2rem monospace;
+    transition: background-color 3s;
+}
+
+.inline-div:hover {
+    background-color: purple;
+  }
+  
+.inline-block-div {
+    display: inline-block;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    text-align: center;
+    color: gray;
+    font: 2rem monospace;
+    transition: background-color 3s;
+  }
+ 
+.inline-block-div:hover {
+    background-color: purple;
+}
+  
+.block-div {
+    display: block;
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    text-align: center;
+    color: gray;
+    font: 2rem monospace;
+    transition: background-color 3s;
+}
+
+.block-div:hover {
+    background-color: purple;
+}
+  
+.flex-div {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    text-align: center;
+    color: gray;
+    font: 2rem monospace;
+    display: flex;
+    transition: background-color 3s;
+}
+  
+.flex-div:hover {
+    background-color: purple;
+}
+  
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+@keyframes increaseWidth {
+    0% 
+    {
+    width: 100px;
+    }
+    100% 
+    {
+    width: 200px;
+    }
+}
+  
+
+.inline-div,
+.inline-block-div,
+.block-div,
+  
+  
+.flex-div {
+    animation: increaseWidth 2s infinite alternate;
+}
